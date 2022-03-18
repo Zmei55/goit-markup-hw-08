@@ -8,8 +8,11 @@
 @import './utils/placeholder';
 @import './utils/visually-hidden';
 @import './components/common/button';
+@import './components/common/logo';
+@import './components/common/social-links';
 
 // index
 @import './components/index/page-header';
 @import './components/index/hero';
 @import './components/index/features';
+@import './components/index/our-team';
