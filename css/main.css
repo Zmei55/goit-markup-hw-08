@@ -73,7 +73,7 @@ p {
   margin-bottom: 0;
 }
 
-.social-links__link, .features__bg {
+.social-links__link, .features__bg, .clients__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,5 +247,32 @@ p {
 .team__text {
   color: #757575;
   margin-bottom: 16px;
+}
+
+.clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px;
+}
+
+.clients__item {
+  margin: 15px;
+  width: calc((100% - 2 * 30px) / 2);
+}
+
+.clients__link {
+  color: #afb1b8;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients__img {
+  fill: currentColor;
+  width: 106px;
+  height: 60px;
 }
 /*# sourceMappingURL=main.css.map */
