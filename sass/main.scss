@@ -4,3 +4,9 @@
 @import './base/section';
 @import './base/_container';
 @import './base/reset-styles';
+@import './utils/visually-hidden';
+@import './components/common/button';
+
+// index
+@import './components/index/page-header';
+@import './components/index/hero';
