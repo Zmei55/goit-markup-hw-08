@@ -73,6 +73,10 @@ p {
   margin-bottom: 0;
 }
 
+.logo, .contacts__link {
+  text-decoration: none;
+}
+
 .social-links__link, .features__bg, .clients__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,7 +103,7 @@ p {
   overflow: hidden;
 }
 
-.hero__button {
+.button {
   color: #ffffff;
   background-color: #2196f3;
   font-family: inherit;
@@ -113,8 +117,44 @@ p {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.hero__button:hover, .hero__button:focus {
+.button:hover, .button:focus {
   background-color: #188ce8;
+}
+
+.button--hero-padding {
+  padding: 10px 32px;
+}
+
+.button--subscribel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.06em;
+  padding: 10px 29px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  color: #2196f3;
+}
+
+.logo--dark {
+  color: #000000;
+  margin-right: 93px;
+}
+
+.logo--light {
+  color: #ffffff;
+  margin-bottom: 20px;
+  display: inline-block;
 }
 
 .social-links {
@@ -174,10 +214,6 @@ p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
-}
-
-.hero__button {
-  padding: 10px 32px;
 }
 
 .features__item:not(:last-child) {
@@ -274,5 +310,79 @@ p {
   fill: currentColor;
   width: 106px;
   height: 60px;
+}
+
+.footer {
+  color: #ffffff;
+  background-color: #2f323a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__item {
+  text-align: center;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.footer__title {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer__link {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.address {
+  font-style: normal;
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.contacts__link {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.contacts__link--white {
+  color: #ffffff;
+}
+
+.contacts__link--gray {
+  color: #757575;
+}
+
+.subscribel {
+  text-align: center;
+}
+
+.subscribel__input {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  padding: 15px 16px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  background-color: #2f323a;
+}
+
+.subscribel__icon {
+  fill: #ffffff;
+  margin-left: 10px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,4 +1,4 @@
-%button {
+.button {
   color: $light-theme-color;
   background-color: $accent-theme;
   font-family: inherit;
@@ -15,4 +15,19 @@
   &:focus {
     background-color: #188ce8;
   }
+}
+
+.button--hero-padding {
+  padding: 10px 32px;
+}
+
+.button--subscribel {
+  display: flex;
+  align-items: center;
+
+  letter-spacing: 0.06em;
+
+  padding: 10px 29px;
+  margin-right: auto;
+  margin-left: auto;
 }
