@@ -7,6 +7,10 @@
 }
 
 .footer__list--tablet-decorate {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     justify-content: space-around;
@@ -51,9 +55,10 @@
 }
 
 .contacts__link {
-  @extend %link;
   font-size: 14px;
   line-height: 1.71;
+
+  text-decoration: none;
 
   &--white {
     color: $light-theme-color;

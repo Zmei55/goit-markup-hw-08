@@ -91,6 +91,10 @@
     display: flex;
     align-items: center;
   }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 84px;
+  }
 }
 
 .nav__list {
@@ -100,8 +104,10 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-
-    margin-right: 84px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -122,36 +128,31 @@
 }
 
 .nav__link {
-  @extend %link;
   display: inline-block;
+
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $accent-theme;
+  }
 
   @media screen and (max-width: 767px) {
     color: $first-theme-color;
-    font-weight: 500;
     font-size: 40px;
     line-height: 1.18;
-    letter-spacing: 0.02em;
-
-    &:hover,
-    &:focus {
-      color: $accent-theme;
-    }
   }
 
   @media screen and (min-width: 768px) {
     color: $first-theme-color;
-    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
 
     padding-top: 32px;
     padding-bottom: 32px;
-
-    &:hover,
-    &:focus {
-      color: $accent-theme;
-    }
   }
 }
 
@@ -183,6 +184,7 @@
   }
 
   @media screen and (min-width: 768px) {
+    margin-left: auto;
   }
 }
 
@@ -191,28 +193,26 @@
 }
 
 .communication__link {
-  @extend %link;
   display: block;
 
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+
   @media screen and (max-width: 767px) {
-    font-weight: 500;
     font-size: 24px;
     line-height: 1.17;
-    letter-spacing: 0.02em;
 
     color: #757575;
-  }
 
-  @media screen and (max-width: 767px) {
     &--decorate {
       position: absolute;
       top: 0;
 
       color: $accent-theme;
-      font-weight: 500;
       font-size: 34px;
       line-height: 1.18;
-      letter-spacing: 0.02em;
     }
   }
 
@@ -221,10 +221,8 @@
     align-items: center;
 
     color: $second-theme-color;
-    font-weight: 500;
     font-size: 12px;
     line-height: 1.17;
-    letter-spacing: 0.02em;
   }
 }
 
@@ -262,11 +260,11 @@
 }
 
 .header__social-links-link {
-  @extend %link;
-
   color: $accent-theme;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+
+  text-decoration: none;
 }
