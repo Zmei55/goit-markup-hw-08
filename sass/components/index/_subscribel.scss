@@ -2,8 +2,11 @@
   @media screen and (max-width: 767px) {
     text-align: center;
   }
+}
 
+.subscribel__box {
   @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 
@@ -12,9 +15,7 @@
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 
-  width: 100%;
   padding: 15px 16px;
-  margin-bottom: 20px;
 
   @include bordered(rgba(255, 255, 255, 0.3));
   box-sizing: border-box;
@@ -22,12 +23,25 @@
   outline: none;
 
   background-color: $footer-color;
+
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 369px;
+    margin-right: 12px;
+  }
 }
 
 .subscribel__icon {
   fill: $light-theme-color;
-
-  @media screen and (min-width: 1200px) {
-    margin-left: 10px;
-  }
+  margin-left: 10px;
 }

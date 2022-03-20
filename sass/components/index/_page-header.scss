@@ -136,6 +136,8 @@
 
   text-decoration: none;
 
+  transition: color 250ms $timing-function;
+
   &:hover,
   &:focus {
     color: $accent-theme;
@@ -233,6 +235,8 @@
     color: $second-theme-color;
     fill: $second-theme-color;
 
+    transition: color 250ms $timing-function, fill 250ms $timing-function;
+
     &:hover,
     &:focus {
       color: $accent-theme;
@@ -243,6 +247,9 @@
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.14;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 

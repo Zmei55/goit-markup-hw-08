@@ -1,7 +1,6 @@
 .projects {
   @media screen and (min-width: 768px) {
     display: flex;
-    align-items: stretch;
     flex-wrap: wrap;
     margin: -15px;
   }
@@ -13,6 +12,10 @@
     margin: 15px;
   }
 
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 3);
+  }
+
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
@@ -21,7 +24,10 @@
 }
 
 .projects__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
   text-decoration: none;
   color: $first-theme-color;
   transition: box-shadow 250ms $timing-function;
@@ -70,6 +76,8 @@
 }
 
 .projects__box {
+  flex-grow: 1;
+
   padding: 20px 24px;
   border-right: 1px solid #eee;
   border-bottom: 1px solid #eee;
