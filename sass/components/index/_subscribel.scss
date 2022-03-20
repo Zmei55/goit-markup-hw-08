@@ -1,5 +1,7 @@
 .subscribel {
-  text-align: center;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .subscribel__input {
@@ -22,5 +24,7 @@
 .subscribel__icon {
   fill: $light-theme-color;
 
-  margin-left: 10px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 10px;
+  }
 }

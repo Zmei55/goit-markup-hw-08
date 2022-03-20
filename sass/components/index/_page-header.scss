@@ -9,36 +9,45 @@
 }
 
 .container__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header__button-menu {
-  display: inline-block;
-  padding: 0;
-  margin-top: 10px;
-  margin-right: 15px;
-  margin-bottom: 10px;
+  @media screen and (max-width: 767px) {
+    display: inline-block;
+    padding: 0;
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 10px;
 
-  border: none;
-  background-color: transparent;
+    border: none;
+    background-color: transparent;
 
-  &:hover,
-  &:focus {
-    fill: $accent-theme;
-  }
+    &:hover,
+    &:focus {
+      fill: $accent-theme;
+    }
 
-  & .header__icon-cross {
-    display: none;
-  }
+    & .header__icon-cross {
+      display: none;
+    }
 
-  &.is-open .header__icon-cross {
-    display: block;
-  }
+    &.is-open .header__icon-cross {
+      display: block;
+    }
 
-  &.is-open .header__icon-menu {
-    display: none;
+    &.is-open .header__icon-menu {
+      display: none;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -52,8 +61,10 @@
 }
 
 .header__menu-container {
-  background-color: $light-theme-color;
-  padding: 48px 40px;
+  @media screen and (max-width: 767px) {
+    background-color: $light-theme-color;
+    padding: 48px 40px;
+  }
 
   @media screen and (max-width: 767px) {
     position: absolute;
@@ -76,33 +87,71 @@
 }
 
 .nav {
-  display: flex;
-  align-items: center;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .nav__list {
-  margin-bottom: 302px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 302px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    margin-right: 84px;
+  }
 }
 
 .nav__item {
   position: relative;
 
-  &:not(:last-child) {
-    margin-bottom: 32px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 
 .nav__link {
   @extend %link;
+  display: inline-block;
 
-  color: $first-theme-color;
-  font-size: 40px;
-  line-height: 1.18;
-  letter-spacing: 0.02em;
+  @media screen and (max-width: 767px) {
+    color: $first-theme-color;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
 
-  &:hover,
-  &:focus {
-    color: $accent-theme;
+    &:hover,
+    &:focus {
+      color: $accent-theme;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    color: $first-theme-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &:hover,
+    &:focus {
+      color: $accent-theme;
+    }
   }
 }
 
@@ -132,17 +181,27 @@
     padding-top: 72px;
     margin-bottom: 64px;
   }
+
+  @media screen and (min-width: 768px) {
+  }
+}
+
+.communication__item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .communication__link {
   @extend %link;
+  display: block;
 
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
+  @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
 
-  color: #757575;
+    color: #757575;
+  }
 
   @media screen and (max-width: 767px) {
     &--decorate {
@@ -156,16 +215,39 @@
       letter-spacing: 0.02em;
     }
   }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+
+    color: $second-theme-color;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
 }
 
 .communication__icon {
   @media screen and (max-width: 767px) {
     display: none;
   }
+
+  @media screen and (min-width: 768px) {
+    fill: $second-theme-color;
+
+    margin-right: 8px;
+  }
 }
 
 .header__social-links {
-  display: flex;
+  @media screen and (max-width: 767px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .header__social-links-item {

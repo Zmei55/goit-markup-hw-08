@@ -7,22 +7,26 @@
 }
 
 .footer__item {
-  text-align: center;
+  @media screen and (min-width: 480px) {
+    text-align: center;
 
-  &:not(:last-child) {
-    margin-bottom: 60px;
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
   }
 }
 
 .footer__title {
-  display: block;
+  @media screen and (min-width: 480px) {
+    display: block;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
 
-  text-transform: uppercase;
-  margin-bottom: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
 }
 
 .footer__link {
@@ -35,7 +39,9 @@
 }
 
 .contacts__item:not(:last-child) {
-  margin-bottom: 9px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 9px;
+  }
 }
 
 .contacts__link {
