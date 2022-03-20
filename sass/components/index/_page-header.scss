@@ -9,15 +9,11 @@
 }
 
 .container__header {
-  @media screen and (max-width: 767px) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  display: flex;
+  align-items: center;
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
   }
 }
 
@@ -62,16 +58,14 @@
 
 .header__menu-container {
   @media screen and (max-width: 767px) {
-    background-color: $light-theme-color;
-    padding: 48px 40px;
-  }
-
-  @media screen and (max-width: 767px) {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100vw;
 
+    padding: 48px 40px;
+
+    background-color: $light-theme-color;
     display: none;
 
     &.is-open {
@@ -84,6 +78,9 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  @media screen and (m) {
+  }
 }
 
 .nav {
@@ -94,6 +91,10 @@
 
   @media screen and (min-width: 768px) {
     margin-right: 84px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 313px;
   }
 }
 
@@ -183,13 +184,19 @@
     margin-bottom: 64px;
   }
 
-  @media screen and (min-width: 768px) {
-    margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 
 .communication__item:not(:last-child) {
-  margin-bottom: 10px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
 }
 
 .communication__link {
@@ -220,9 +227,22 @@
     display: flex;
     align-items: center;
 
-    color: $second-theme-color;
     font-size: 12px;
     line-height: 1.17;
+
+    color: $second-theme-color;
+    fill: $second-theme-color;
+
+    &:hover,
+    &:focus {
+      color: $accent-theme;
+      fill: $accent-theme;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -232,8 +252,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    fill: $second-theme-color;
-
     margin-right: 8px;
   }
 }
