@@ -1,7 +1,7 @@
 .projects {
   @media screen and (min-width: 768px) {
     display: flex;
-    // align-items: stretch;
+    align-items: stretch;
     flex-wrap: wrap;
     margin: -15px;
   }
@@ -9,15 +9,14 @@
 
 .projects__item {
   @media screen and (min-width: 768px) {
-    // display: flex;
     width: calc((100% - 60px) / 2);
     margin: 15px;
   }
-}
 
-@media screen and (max-width: 767px) {
-  .projects__item:not(:last-child) {
-    margin-bottom: 30px;
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 }
 

@@ -18,6 +18,12 @@
   }
 }
 
+.filter__item:nth-child(-n + 3) {
+  @media screen and (max-width: 768px) {
+    margin-bottom: 15px;
+  }
+}
+
 .filter__button {
   font-family: inherit;
   font-weight: 500;
@@ -27,7 +33,6 @@
   @include bordered(transparent);
   border-radius: 4px;
   padding: 6px 22px;
-  margin-bottom: 15px;
   background-color: $background-filter-portfolio;
 
   transition: color 250ms $timing-function, background-color 250ms $timing-function,
