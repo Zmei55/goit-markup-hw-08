@@ -16,14 +16,12 @@
 
   color: $link-color;
 
-  @media screen and (min-width: 1200px) {
-    transition: background-color 250ms $timing-function, color 250ms $timing-function;
+  transition: background-color 250ms $timing-function, color 250ms $timing-function;
 
-    &:hover,
-    &:focus {
-      color: $light-theme-color;
-      background-color: $accent-theme;
-    }
+  &:hover,
+  &:focus {
+    color: $light-theme-color;
+    background-color: $accent-theme;
   }
 }
 
