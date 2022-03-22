@@ -184,27 +184,63 @@
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="work">
             <li class="work__item">
-              <img
-                srcset="./images/work/work1.jpg 1x, ./images/work/work1@2x.jpg 2x"
-                src="./images/work/work1.jpg"
-                alt="десктопное программирование"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/work/webp/work1-370.webp 370w,
+                    ./images/work/webp/work1-740.webp 740w
+                  "
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/work/jpeg/work1-370.jpg 370w,
+                    ./images/work/jpeg/work1-740.jpg 740w
+                  "
+                  src="./images/work/jpeg/work1-370.jpg"
+                  alt="десктопное программирование"
+                />
+              </picture>
               <p class="work__text">Десктопные приложения</p>
             </li>
             <li class="work__item">
-              <img
-                srcset="./images/work/work2.jpg 1x, ./images/work/work2@2x.jpg 2x"
-                src="./images/work/work2.jpg"
-                alt="мобильная разработка"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/work/webp/work2-370.webp 370w,
+                    ./images/work/webp/work2-740.webp 740w
+                  "
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/work/jpeg/work2-370.jpg 370w,
+                    ./images/work/jpeg/work2-740.jpg 740w
+                  "
+                  src="./images/work/jpeg/work2-370.jpg"
+                  alt="мобильная разработка"
+                />
+              </picture>
               <p class="work__text">Мобильные приложения</p>
             </li>
             <li class="work__item">
-              <img
-                srcset="./images/work/work3.jpg 1x, ./images/work/work3@2x.jpg 2x"
-                src="./images/work/work3.jpg"
-                alt="дизайн"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/work/webp/work3-370.webp 370w,
+                    ./images/work/webp/work3-740.webp 740w
+                  "
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/work/jpeg/work3-370.jpg 370w,
+                    ./images/work/jpeg/work3-740.jpg 740w
+                  "
+                  src="./images/work/jpeg/work3-370.jpg"
+                  alt="дизайн"
+                />
+              </picture>
               <p class="work__text">Дизайнерские решения</p>
             </li>
           </ul>
