@@ -15,13 +15,11 @@
 .work__item {
   position: relative;
 
+  width: 370px;
+
   &:not(:last-child) {
     margin-right: 30px;
   }
-}
-
-.work__image {
-  width: 370px;
 }
 
 .work__text {

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
 body {
+  min-width: 320px;
   background-color: #ffffff;
   color: #212121;
   font-family: Roboto, sans-serif;
@@ -28,11 +29,29 @@ img {
 }
 
 .container {
-  max-width: 1200px;
+  min-width: 320px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 h1,
@@ -687,14 +706,11 @@ p {
 
 .work__item {
   position: relative;
+  width: 370px;
 }
 
 .work__item:not(:last-child) {
   margin-right: 30px;
-}
-
-.work__image {
-  width: 370px;
 }
 
 .work__text {

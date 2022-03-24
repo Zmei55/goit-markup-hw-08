@@ -186,59 +186,42 @@
             <li class="work__item">
               <picture>
                 <source
-                  srcset="
-                    ./images/work/webp/work1-370.webp 1x,
-                    ./images/work/webp/work1-740.webp 2x
-                  "
+                  srcset="./images/work/webp/work1.webp 1x, ./images/work/webp/work1@2x.webp 2x"
                   type="image/webp"
                 />
                 <source
-                  srcset="./images/work/jpeg/work1-370.jpg 1x, ./images/work/jpeg/work1-740.jpg 2x"
+                  srcset="./images/work/jpeg/work1.jpg 1x, ./images/work/jpeg/work1@2x.jpg 2x"
                   type="image/jpeg"
                 />
-                <img
-                  src="./images/work/jpeg/work1-370.jpg"
-                  alt="десктопное программирование"
-                  width="370"
-                />
+                <img src="./images/work/jpeg/work1.jpg" alt="десктопное программирование" />
               </picture>
               <p class="work__text">Десктопные приложения</p>
             </li>
             <li class="work__item">
               <picture>
                 <source
-                  srcset="
-                    ./images/work/webp/work2-370.webp 1x,
-                    ./images/work/webp/work2-740.webp 2x
-                  "
+                  srcset="./images/work/webp/work2.webp 1x, ./images/work/webp/work2@2x.webp 2x"
                   type="image/webp"
                 />
                 <source
-                  srcset="./images/work/jpeg/work2-370.jpg 1x, ./images/work/jpeg/work2-740.jpg 2x"
+                  srcset="./images/work/jpeg/work2.jpg 1x, ./images/work/jpeg/work2@2x.jpg 2x"
                   type="image/jpeg"
                 />
-                <img
-                  src="./images/work/jpeg/work2-370.jpg"
-                  alt="мобильная разработка"
-                  width="370"
-                />
+                <img src="./images/work/jpeg/work2.jpg" alt="мобильная разработка" />
               </picture>
               <p class="work__text">Мобильные приложения</p>
             </li>
             <li class="work__item">
               <picture>
                 <source
-                  srcset="
-                    ./images/work/webp/work3-370.webp 1x,
-                    ./images/work/webp/work3-740.webp 2x
-                  "
+                  srcset="./images/work/webp/work3.webp 1x, ./images/work/webp/work3@2x.webp 2x"
                   type="image/webp"
                 />
                 <source
-                  srcset="./images/work/jpeg/work3-370.jpg 1x, ./images/work/jpeg/work3-740.jpg 2x"
+                  srcset="./images/work/jpeg/work3.jpg 1x, ./images/work/jpeg/work3@2x.jpg 2x"
                   type="image/jpeg"
                 />
-                <img src="./images/work/jpeg/work3-370.jpg" alt="дизайн" width="370" />
+                <img src="./images/work/jpeg/work3.jpg" alt="дизайн" />
               </picture>
               <p class="work__text">Дизайнерские решения</p>
             </li>
@@ -254,38 +237,38 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="
-                    ./images/team/webp/team1-270.webp 270w,
-                    ./images/team/webp/team1-405.webp 405w,
-                    ./images/team/webp/team1-540.webp 540w,
-                    ./images/team/webp/team1-810.webp 810w,
-                    ./images/team/webp/team1-945.webp 954w
-                  "
+                  srcset="./images/team/webp/mobile1.webp 1x, ./images/team/webp/mobile1@2x.webp 2x"
+                  media="(max-width: 767px)"
                   type="image/webp"
-                  sizes="
-                    (min-width: 1200px) 25vw,
-                    (min-width: 768px) 50vw,
-                    (max-width: 767px) 100vw,
-                    100vw"
+                />
+                <source
+                  srcset="./images/team/webp/tablet1.webp 1x, ./images/team/webp/tablet1@2x.webp 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/webp"
                 />
                 <source
                   srcset="
-                    ./images/team/jpeg/team1-270.jpg 270w,
-                    ./images/team/jpeg/team1-405.jpg 405w,
-                    ./images/team/jpeg/team1-540.jpg 540w,
-                    ./images/team/jpeg/team1-810.jpg 810w,
-                    ./images/team/jpeg/team1-945.jpg 954w
+                    ./images/team/webp/desktop1.webp    1x,
+                    ./images/team/webp/desktop1@2x.webp 2x
                   "
-                  type="image/jpeg"
-                  sizes="
-                    (min-width: 1200px) 25vw,
-                    (min-width: 768px) 50vw,
-                    (max-width: 767px) 100vw,
-                    100vw"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/jpeg/mobile1.jpg 1x, ./images/team/jpeg/mobile1@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/team/jpeg/tablet1.jpg 1x, ./images/team/jpeg/tablet1@2x.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/team/jpeg/desktop1.jpg 1x, ./images/team/jpeg/desktop1@2x.jpg 2x"
+                  media="(min-width: 1200px)"
                 />
                 <img
                   class="team__img"
-                  src="./images/team/jpeg/team1-270.jpg"
+                  src="./images/team/jpeg/mobile1.jpg"
                   alt="фото Игорь Демьяненко"
                 />
               </picture>
@@ -352,38 +335,38 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="
-                    ./images/team/webp/team2-270.webp 270w,
-                    ./images/team/webp/team2-405.webp 405w,
-                    ./images/team/webp/team2-540.webp 540w,
-                    ./images/team/webp/team2-810.webp 810w,
-                    ./images/team/webp/team2-945.webp 945w
-                  "
+                  srcset="./images/team/webp/mobile2.webp 1x, ./images/team/webp/mobile2@2x.webp 2x"
+                  media="(max-width: 767px)"
                   type="image/webp"
-                  sizes="
-                    (min-width: 1200px) 25vw,
-                    (min-width: 768px) 50vw,
-                    (max-width: 767px) 100vw,
-                    100vw"
+                />
+                <source
+                  srcset="./images/team/webp/tablet2.webp 1x, ./images/team/webp/tablet2@2x.webp 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/webp"
                 />
                 <source
                   srcset="
-                    ./images/team/jpeg/team2-270.jpg 270w,
-                    ./images/team/jpeg/team2-405.jpg 405w,
-                    ./images/team/jpeg/team2-540.jpg 540w,
-                    ./images/team/jpeg/team2-810.jpg 810w,
-                    ./images/team/jpeg/team2-945.jpg 945w
+                    ./images/team/webp/desktop2.webp    1x,
+                    ./images/team/webp/desktop2@2x.webp 2x
                   "
-                  type="image/jpeg"
-                  sizes="
-                    (min-width: 1200px) 25vw,
-                    (min-width: 768px) 50vw,
-                    (max-width: 767px) 100vw,
-                    100vw"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/jpeg/mobile2.jpg 1x, ./images/team/jpeg/mobile2@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/team/jpeg/tablet2.jpg 1x, ./images/team/jpeg/tablet2@2x.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/team/jpeg/desktop2.jpg 1x, ./images/team/jpeg/desktop2@2x.jpg 2x"
+                  media="(min-width: 1200px)"
                 />
                 <img
                   class="team__img"
-                  src="./images/team/jpeg/team2-270.jpg"
+                  src="./images/team/jpeg/mobile2.jpg"
                   alt="фото Ольга Репина"
                 />
               </picture>
@@ -451,38 +434,38 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="
-                    ./images/team/webp/team3-270.webp 270w,
-                    ./images/team/webp/team3-405.webp 405w,
-                    ./images/team/webp/team3-540.webp 540w,
-                    ./images/team/webp/team3-810.webp 810w,
-                    ./images/team/webp/team3-945.webp 945w
-                  "
+                  srcset="./images/team/webp/mobile3.webp 1x, ./images/team/webp/mobile3@2x.webp 2x"
+                  media="(max-width: 767px)"
                   type="image/webp"
-                  sizes="
-                    (min-width: 1200px) 25vw,
-                    (min-width: 768px) 50vw,
-                    (max-width: 767px) 100vw,
-                    100vw"
+                />
+                <source
+                  srcset="./images/team/webp/tablet3.webp 1x, ./images/team/webp/tablet3@2x.webp 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/webp"
                 />
                 <source
                   srcset="
-                    ./images/team/jpeg/team3-270.jpg 270w,
-                    ./images/team/jpeg/team3-405.jpg 405w,
-                    ./images/team/jpeg/team3-540.jpg 540w,
-                    ./images/team/jpeg/team3-810.jpg 810w,
-                    ./images/team/jpeg/team3-945.jpg 945w
+                    ./images/team/webp/desktop3.webp    1x,
+                    ./images/team/webp/desktop3@2x.webp 2x
                   "
-                  type="image/jpeg"
-                  sizes="
-                    (min-width: 1200px) 25vw,
-                    (min-width: 768px) 50vw,
-                    (max-width: 767px) 100vw,
-                    100vw"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/jpeg/mobile3.jpg 1x, ./images/team/jpeg/mobile3@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/team/jpeg/tablet3.jpg 1x, ./images/team/jpeg/tablet3@2x.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/team/jpeg/desktop3.jpg 1x, ./images/team/jpeg/desktop3@2x.jpg 2x"
+                  media="(min-width: 1200px)"
                 />
                 <img
                   class="team__img"
-                  src="./images/team/jpeg/team3-270.jpg"
+                  src="./images/team/jpeg/tablet3.jpg"
                   alt="фото Николай Тарасов"
                 />
               </picture>
@@ -550,38 +533,38 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="
-                    ./images/team/webp/team4-270.webp 270w,
-                    ./images/team/webp/team4-405.webp 405w,
-                    ./images/team/webp/team4-540.webp 540w,
-                    ./images/team/webp/team4-810.webp 810w,
-                    ./images/team/webp/team4-945.webp 945w
-                  "
+                  srcset="./images/team/webp/mobile4.webp 1x, ./images/team/webp/mobile4@2x.webp 2x"
+                  media="(max-width: 767px)"
                   type="image/webp"
-                  sizes="
-                    (min-width: 1200px) 25vw,
-                    (min-width: 768px) 50vw,
-                    (max-width: 767px) 100vw,
-                    100vw"
+                />
+                <source
+                  srcset="./images/team/webp/tablet4.webp 1x, ./images/team/webp/tablet4@2x.webp 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/webp"
                 />
                 <source
                   srcset="
-                    ./images/team/jpeg/team4-270.jpg 270w,
-                    ./images/team/jpeg/team4-405.jpg 405w,
-                    ./images/team/jpeg/team4-540.jpg 540w,
-                    ./images/team/jpeg/team4-810.jpg 810w,
-                    ./images/team/jpeg/team4-945.jpg 945w
+                    ./images/team/webp/desktop4.webp    1x,
+                    ./images/team/webp/desktop4@2x.webp 2x
                   "
-                  type="image/jpeg"
-                  sizes="
-                    (min-width: 1200px) 25vw,
-                    (min-width: 768px) 50vw,
-                    (max-width: 767px) 100vw,
-                    100vw"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/jpeg/mobile4.jpg 1x, ./images/team/jpeg/mobile4@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/team/jpeg/tablet4.jpg 1x, ./images/team/jpeg/tablet4@2x.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/team/jpeg/desktop4.jpg 1x, ./images/team/jpeg/desktop4@2x.jpg 2x"
+                  media="(min-width: 1200px)"
                 />
                 <img
                   class="team__img"
-                  src="./images/team/jpeg/team4-270.jpg"
+                  src="./images/team/jpeg/tablet4.jpg"
                   alt="фото Михаил Ермаков"
                 />
               </picture>
