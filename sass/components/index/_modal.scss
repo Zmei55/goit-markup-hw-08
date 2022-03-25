@@ -9,6 +9,11 @@
   opacity: 1;
 
   transition: opacity 250ms $timing-function;
+
+  @media screen and (max-width: 480px) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 .backdrop.is-hidden {

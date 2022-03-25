@@ -26,7 +26,7 @@
   @media screen and (min-width: 1200px) {
     align-items: baseline;
 
-    margin-right: 93px;
+    margin-right: 92px;
   }
 }
 
@@ -36,6 +36,12 @@
 
     &:not(:last-child) {
       margin-bottom: 60px;
+    }
+  }
+
+  &:first-child {
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
     }
   }
 }
@@ -62,10 +68,6 @@
 
 .address {
   font-style: normal;
-
-  @media screen and (min-width: 1200px) {
-    margin-right: 70px;
-  }
 }
 
 .contacts__item:not(:last-child) {

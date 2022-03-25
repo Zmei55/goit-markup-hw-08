@@ -1,9 +1,16 @@
 .logo {
+  display: inline-block;
+
   font-family: Raleway, sans-serif;
   font-weight: 700;
   color: $accent-theme;
 
   text-decoration: none;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
 
   @media screen and (max-width: 1199px) {
     font-size: 24px;
@@ -18,7 +25,8 @@
 
 .logo--dark {
   color: #000000;
-
+}
+.logo--header-margin {
   @media screen and (min-width: 768px) {
     margin-right: 88px;
   }
@@ -31,6 +39,8 @@
 .logo--light {
   color: $light-theme-color;
   display: inline-block;
+}
 
+.logo--footer-margin {
   margin-bottom: 20px;
 }
