@@ -9,11 +9,6 @@
   opacity: 1;
 
   transition: opacity 250ms $timing-function;
-
-  @media screen and (max-width: 480px) {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
 }
 
 .backdrop.is-hidden {
@@ -27,7 +22,6 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  width: 450px;
   padding: 40px;
 
   background-color: $light-theme-color;
@@ -39,6 +33,17 @@
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(1.5);
+  }
+
+  @media screen and (max-width: 479px) {
+    position: relative;
+    width: auto;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
   }
 }
 

@@ -9,6 +9,12 @@ body {
   letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 320px) {
+  body {
+    overflow-x: visible;
+  }
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -35,7 +41,6 @@ img {
 }
 
 .container {
-  min-width: 320px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -483,6 +488,7 @@ p {
 
 @media screen and (max-width: 767px) {
   .header__mobile-menu {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -497,6 +503,10 @@ p {
 
 @media screen and (max-width: 767px) {
   .header__button-mobile-menu {
+    position: absolute;
+    top: 1;
+    right: 0;
+    z-index: 2;
     display: block;
     width: 40px;
     height: 40px;
@@ -542,6 +552,12 @@ p {
   }
   .header__mobile-menu-backdrop.is-open {
     display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__mobile-menu-backdrop {
+    width: 100%;
   }
 }
 
@@ -1083,13 +1099,6 @@ p {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 480px) {
-  .backdrop {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
-
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -1101,7 +1110,6 @@ p {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  width: 450px;
   padding: 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1116,6 +1124,21 @@ p {
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(1.5);
           transform: translate(-50%, -50%) scale(1.5);
+}
+
+@media screen and (max-width: 479px) {
+  .modal {
+    position: relative;
+    width: auto;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
 }
 
 .modal__button {
