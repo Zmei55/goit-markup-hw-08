@@ -116,8 +116,9 @@
 
 .form__check-icon2 {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 2px;
+  transform: translateY(-50%);
 
   display: block;
   width: 16px;
